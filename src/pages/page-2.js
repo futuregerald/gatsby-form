@@ -3,7 +3,10 @@ import Link from 'gatsby-link'
 
 const SecondPage = () => (
   <div>
-    <form name="contact" netlify-honeypot="bot-field" netlify>
+    <form name="contact" method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field" netlify>
       <p>
         <label>
           Your Name: <input type="text" name="name" />
