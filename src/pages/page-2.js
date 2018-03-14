@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const SecondPage = () => (
   <div>
-    <form name="contact" method="post"
+    <form name="contact2" method="post"
           action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field" netlify>
@@ -25,7 +25,7 @@ const SecondPage = () => (
       <p>
         <button type="submit">Send</button>
       </p>
-      <div netlify-recaptcha />
+      <div data-netlify-recaptcha="true" />
     </form>
   </div>
 )
